@@ -1,0 +1,104 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "no-console": "off",
+    "semi": ["error", "always"],
+    // Whitespacce
+    "spaced-comment": ["warn", "always", { "exceptions": ["-"] }],
+    "comma-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "space-before-blocks": "error",
+    "key-spacing": "error",
+    "space-infix-ops": "error",
+    "eol-last": "warn",
+    "padded-blocks": ["error", "never"],
+    "space-in-parens": "error",
+    "array-bracket-spacing": "error",
+    "object-curly-spacing": ["error", "always"],
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1
+      }
+    ],
+    // Refrences
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false
+      }
+    ],
+    "no-var": "error",
+    "no-use-before-define": "error",
+    "one-var": ["warn", "never"],
+    "camelcase": "error",
+    // "new-cap":"error",
+    // Objects
+    "no-new-object": "error",
+    "object-shorthand": [
+      "warn",
+      "always",
+      {
+        "avoidQuotes": true,
+        "ignoreConstructors": true
+      }
+    ],
+    "quote-props": ["error", "as-needed"],
+    // Arrays
+    "no-array-constructor": "error",
+    // Strings
+    "prefer-template": "error",
+    "template-curly-spacing": "error",
+    "no-eval": "error",
+    // Functions
+    "wrap-iife": ["error", "inside"],
+    "no-loop-func": "error",
+    "prefer-rest-params": "error",
+    "no-new-func": "error",
+    // "space-before-function-paren": ["error", "never"],
+    "no-param-reassign": "warn",
+    "prefer-spread": "error",
+    "no-useless-constructor": "error",
+    // Arrow Functions
+    "prefer-arrow-callback": "error",
+    "arrow-spacing": "error",
+    "arrow-parens": ["error", "always"],
+    "no-confusing-arrow": "off",
+    // Modules
+    "no-duplicate-imports": "error",
+    // Properties
+    "dot-notation": ["warn", { "allowPattern": "^[A-Z0-9]+(_[A-Z0-9]+)+$" }],
+    // Comparisons
+    "eqeqeq": ["warn", "smart"],
+    "no-nested-ternary": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-mixed-operators": "error",
+    // Blocks
+    "brace-style": "error",
+    "no-else-return": "error",
+    // Commas
+    "comma-style": "error",
+    "comma-dangle": ["warn", "always-multiline"]
+  }
+}
